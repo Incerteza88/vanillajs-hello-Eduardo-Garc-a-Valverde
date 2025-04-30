@@ -20,9 +20,10 @@ function generarExcusa() {
   let frase= (sujetoRandom  + " " + verboRandom + " " + objetoRandom + " " + momentoRandom);
 
   document.querySelector('#excusa').innerHTML = frase;
-
   }
   
-generarExcusa();
 
+  document.querySelector('#button').addEventListener('click',  generarExcusa)
+ 
 }
+
